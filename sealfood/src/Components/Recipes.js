@@ -4,21 +4,25 @@ import '../App.css';
 import Recipe from './Recipe'
 
 class Recipes extends React.Component {
+
+    constructor(props) {
+        super(props);
+     }
+
+    showAllRecipes = (Recipes) => {
+        return Recipes.map(item => {
+            console.log(item)
+            return <Col><Recipe Recipe={item}></Recipe></Col>
+        })
+        
+    }
     render = () => {
         return (
             <div>
-<Row>
-    <Col><div className='Recipe'><Recipe></Recipe></div></Col>
-    <Col><Recipe></Recipe></Col>
-    <Col><Recipe></Recipe></Col>
-  </Row>
-  <Row>
-    <Col><Recipe></Recipe></Col>
-    <Col><Recipe></Recipe></Col>
-    <Col><Recipe></Recipe></Col>
-  </Row>
+                <Row>
+                {this.showAllRecipes(this.props.Recipes)}   
+                </Row>
             </div>
-            
                 )
                 
             }
