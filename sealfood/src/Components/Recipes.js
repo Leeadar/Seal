@@ -11,15 +11,14 @@ class Recipes extends React.Component {
 
     showAllRecipes = (Recipes) => {
         return Recipes.map(item => {
-            console.log(item)
-            return <Col><Recipe Recipe={item}></Recipe></Col>
+            return <Col className='col'><Recipe Recipe={item}></Recipe></Col>
         })
         
     }
     render = () => {
         return (
-            <div>
-                <Row>
+            <div className='Recipes'>
+                <Row className='Row'>
                 {this.showAllRecipes(this.props.Recipes)}   
                 </Row>
             </div>

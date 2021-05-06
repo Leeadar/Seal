@@ -2,13 +2,14 @@ import '../App.css';
 import Foodtype from './FoodType';
 import {Card} from 'react-bootstrap'
 
+
 function Recipe(props) {
-    
-    debugger
   return (
     <div>
         <div class="card">
-            <div class="header"></div>
+            <div class="header">
+                <img src={props.Recipe.imgURL}></img>
+            </div>
             <div class="text">
             <h5 class="food">
                 {props.Recipe.name}
