@@ -14,7 +14,7 @@
         {"id":1011, "amount":2,"description":"בינוניים"},
         {"id":1012, "amount":1,"description":"קטנה קלופה חתוכה לקוביות"}
         ],
-        "makingTime":100
+        "makingTime":35
     },
     {
         "id": 2,
@@ -174,5 +174,38 @@
         {"id":1025,"amount":1,  "description":"קילו"}
         ],
         "makingTime": 30
+    },
+    {
+        "id": 11,
+        "type": "Veagn",
+
+        "name": "סלט חסה מושלם",
+
+        "description": "מתכון לסלט חסה מושלם ומשביע לארוחת צהריים ",
+
+        "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0EByoqzsQx6wBpkHnhE0KmyoZ0xnhdmhyg&usqp=CAU",
+        "recipe": "בקערה גדולה ובעזרת מטרפה טורפים היטב את כל מצרכי הרוטב עד לקבלת רוטב ללא גושים. שופכים על הסלט רק לפני ההגשה. ",
+       
+        "products": [
+        {"id":1026,"amount":1}
+        ],
+        "makingTime": 15
+    },
+    {
+        "id": 12,
+        "type": "mead",
+
+        "name": "אורז מוקפץ עם פרגית",
+
+        "description": "נשאר לכם אורז לבן מבושל במקרר? הכינו תבשיל בסיר אחד ב-10 דקות! ",
+
+        "imgURL": "https://www.10dakot.co.il/wp-content/uploads/2020/05/%E2%80%8F%E2%80%8FDSC_0015-%D7%A2%D7%95%D7%AA%D7%A7.jpg",
+        "recipe": "בקערה גדולה ובעזרת מטרפה טורפים היטב את כל מצרכי הרוטב עד לקבלת רוטב ללא גושים. שופכים על הסלט רק לפני ההגשה. ",
+       
+        "products": [
+        {"id":1027,"amount":4},
+        {"id":1028,"amount":1}
+        ],
+        "makingTime": 10
     }
 ]
