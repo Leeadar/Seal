@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home';
+
 class App extends React.Component {
 
   constructor(props) {
@@ -17,18 +18,20 @@ class App extends React.Component {
     };
   }
 
-  onClickHandler = () => {
+  onClickHandler = (type,time) => {
+    console.log(type);
+    let newArr = [...this.state.recipes];
+    const filteredArr = newArr.filter((recipe) => (recipe.makingTime <= time ) && (type.toLowerCase() == recipe.type.toLowerCase()))
     this.setState({
+      recipes: filteredArr,
       currentPage: 'Recipes'
     });
   }
 
   render = () => {
-    console.log("fdfdf")
       return (
-        
         <div>
-          {this.state.currentPage = 'Home' ? <Home onClickHandler={this.onClickHandler}></Home> :  <h1>gggg</h1>}
+          {this.state.currentPage == 'Home' ? <Home onClickHandler={this.onClickHandler}></Home> : <Recipes Recipes={this.state.recipes}></Recipes>}
         </div>
        
       )
