@@ -3,7 +3,8 @@ import Foodtype from './FoodType';
 import {Card} from 'react-bootstrap'
 
 function Recipe(props) {
-    console.log(props)
+    
+    debugger
   return (
     <div>
         <div class="card">
@@ -12,10 +13,10 @@ function Recipe(props) {
             <h5 class="food">
                 {props.Recipe.name}
             </h5>
-            <i class="fa fa-clock-o"> {props.Recipe.makingTime} Mins</i>
+            <i class="fa fa-clock-o"> {props.Recipe.makingTime} דקות</i>
             <p class="info">{props.Recipe.description}</p>
             </div>
-            <a href="#" class="btn">Let's Cook!</a>
+            <a href="#" class="btn">בואו נבשל!</a>
         </div>
     </div>
   );
