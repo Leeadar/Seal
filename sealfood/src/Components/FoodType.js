@@ -1,9 +1,16 @@
 import '../App.css';
-function FoodType({ onClickTypeHandler,type, src}) {
+
+
+const dic = {
+    MEAT: "בשרי",
+    DAIRY: "חלבי",
+    VEGAN: "טבעוני"
+}
+function FoodType({ currentType , onClickTypeHandler,type, src}) {
     return (
-        <div onClick={() => onClickTypeHandler(type)} className='FoodType'>
+        <div className={` FoodType ${currentType === type ? 'choose' : null}`} onClick={() => onClickTypeHandler(type)}>
             <img  src={src}></img>
-            <div   className='Type'>{type}</div>
+            <div  className='Type'>{dic[type]}</div>
         </div>
     )
 }

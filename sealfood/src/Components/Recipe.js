@@ -6,7 +6,7 @@ import {Card} from 'react-bootstrap'
 function Recipe(props) {
   return (
     <div>
-        <div class="card">
+        <div class="card Recipe">
             <div class="header">
                 <img src={props.Recipe.imgURL}></img>
             </div>
