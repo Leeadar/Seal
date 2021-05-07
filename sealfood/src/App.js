@@ -4,7 +4,7 @@ import Recipe from './Components/Recipe';
 import RecipesArr from './data.json'
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-
+import RecipeModal from './Components/RecipeModal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home';
 
@@ -19,7 +19,7 @@ class App extends React.Component {
   }
 
   onClickHandler = (type,time) => {
-    console.log(type);
+    console.log(time);
     let newArr = [...this.state.recipes];
     const filteredArr = newArr.filter((recipe) => (recipe.makingTime <= time ) && (type.toLowerCase() == recipe.type.toLowerCase()))
     this.setState({
@@ -30,8 +30,8 @@ class App extends React.Component {
 
   render = () => {
       return (
-        <div>
-          {this.state.currentPage == 'Home' ? <Home onClickHandler={this.onClickHandler}></Home> : <Recipes Recipes={this.state.recipes}></Recipes>}
+        <div className='app'>
+        {this.state.currentPage == 'Home' ? <Home onClickHandler={this.onClickHandler}></Home> : <Recipes Recipes={this.state.recipes}></Recipes>} 
         </div>
        
       )
