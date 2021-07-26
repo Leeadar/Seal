@@ -11,7 +11,7 @@ A well-thought-out meal plan can help you improve your diet quality or reach a s
 ### Why using us?
 Our idea is to provide the customer with various recipes and possible preparation times. You can choose from three kitchen styles and in seconds, finding a rich and healthy lunch.
 
-### Our prudcts benefits
+### Our product benefits
 :heavy_check_mark: Improving the decision-making process
 
 :heavy_check_mark: Maintains a good nutrition of the employee
